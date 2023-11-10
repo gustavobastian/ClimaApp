@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'city-page',
     loadChildren: () => import('./city-page/city-page.module').then( m => m.CityPagePageModule)
   },
+  {
+    path: 'info-page',
+    loadChildren: () => import('./info-page/info-page.module').then( m => m.InfoPagePageModule)
+  },
 ];
 
 @NgModule({

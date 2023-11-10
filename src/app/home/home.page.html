@@ -66,8 +66,11 @@
   </div>
 </ion-content>
   <ion-footer class="footer">
-    <ion-toolbar>
-      <p>Powered by:<a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>
+    <ion-toolbar class="footer2">
+      <div class="myFooter">
+        <p>Powered by:<a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>
+        <button class="infoButton" id="infoButton" (click)="goInfo()">Info</button>
+      </div>
     </ion-toolbar>
   </ion-footer>
 
