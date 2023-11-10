@@ -4,7 +4,7 @@
   "author": "Gustavo Bastian",
   "license":"MIT",
   "bugs": {
-    "url": "https://github.com/gustavobastian/mobWeatherApp/issues"
+    "url": "https://github.com/gustavobastian/ClimaApp/issues"
   },
   "homepage": "https:/www.gabiot.com.ar/",
   "scripts": {
@@ -18,7 +18,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gustavobastian/mobWeatherApp"
+    "url": "git+https://github.com/gustavobastian/ClimaApp"
   },
   "dependencies": {
     "@angular/animations": "^16.0.0",
