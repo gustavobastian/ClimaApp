@@ -1,0 +1,26 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="container2">
+
+    <div class="titleLocal" >Seleccionar ciudad</div>
+
+    <form [formGroup]="cityForm" (ngSubmit)="return()">
+      <div class="lineInput">
+        <label for="cityInput" class="labelInput">Ciudad:</label>
+        <input type="text" class="tipeInput" id="cityInput" formControlName="cityValue">
+      </div>
+      <div class="lineInput">
+        <label for="cityInput" class="labelInput">Estado:</label>
+        <input type="text" class="tipeInput" id="stateInput" formControlName="stateValue">
+      </div>
+      <div class="lineInput">
+        <label for="countryInput" class="labelInput">País:</label>
+        <input type="text" class="tipeInput" id="countryInput" formControlName="countryValue">
+      </div>
+
+      <button class="changeButton" type="submit">Cambiar</button>
+    </form>
+  </div>
+
+</ion-content>

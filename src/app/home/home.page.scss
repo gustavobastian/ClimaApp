@@ -1,13 +1,14 @@
 #container {
   text-align: center;
-
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 10%;
   transform: translateY(-50%);
 }
-
+.customizedHeader{
+  background: transparent!important;
+}
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -24,4 +25,190 @@
 
 #container a {
   text-decoration: none;
+}
+.container2{
+  display:flex;
+  flex-direction: column;
+  justify-content:top ;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 50px;
+  background: linear-gradient(#fae1c6, #0b425a ) !important;
+
+}
+.footer{
+  background: transparent!important;
+}
+
+
+.cityLine{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 3ex;
+  color:black;
+  margin-top: 10px;
+}
+.cityValue{
+  display: flex;
+  flex-direction: row;
+  width:auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+#cityChange{
+  margin-left:50% ;
+  border-radius: 10px;
+  width: 100px;
+  background: rgb(250, 250, 165);
+  transform: translate(-50px,0);
+  height: 30px;
+  color:black;
+  margin-top: 10px;
+}
+#cityChange:hover{
+  background: rgb(143, 143, 23);
+}
+.stateLine{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 2ex;
+  color:black;
+  margin-top: 10px;
+}
+.stateValue{
+  display: flex;
+  flex-direction: row;
+  width:auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.countryLine{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 2ex;
+  color:black;
+  margin-top: 10px;
+}
+.countryValue{
+  display: flex;
+  flex-direction: row;
+  width:auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+.temperatureLine{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10%;
+  font-size: 3ex;
+  color:black;
+}
+.temperatureValue{
+  display: flex;
+  flex-direction: row;
+  width:auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.temperatureLine2{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10%;
+  font-size: 2ex;
+  margin-top: 10px;
+  color:black;
+}
+
+.pressureLine{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 3ex;
+  margin-top: 10px;
+  color:black;
+}
+.pressureValue{
+  display: flex;
+  flex-direction: row;
+  width:auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.humidityLine{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 3ex;
+  margin-top: 10px;
+  color:black;
+}
+.humidityValue{
+  display: flex;
+  flex-direction: row;
+  width:auto;
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+#GetData{
+  background: rgb(250, 250, 165);
+  border-radius: 10px;
+  width: 74px;
+  height: 30px;
+  margin-left: 50%;
+  transform: translate(-37px,0);
+  color:black;
+
+}
+#GetData:hover{
+  background: rgb(143, 143, 23);
+}
+
+
+.timeLine{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.2ex;
+  margin-bottom: 0px;
+}
+.spaceBetween{
+  display: flex;
+  height: 200px;
+}
+.myImage{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-left: 50%;
+  transform: translate(-100px,0);
+
 }
