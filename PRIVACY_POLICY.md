@@ -18,7 +18,7 @@ https://github.com/gustavobastian/ClimaApp/blob/main/android/app/src/main/Androi
 
 If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protectes your privacy, please send me an email or post a discussion on GitHub, and I will surely try to fix it/help you.
 
-Yours sincerely,
-Gustavo Bastian.
-Santo Tomé, Santa Fe, Argentina.
+Yours sincerely,\
+Gustavo Bastian.\
+Santo Tomé, Santa Fe, Argentina.\
 bastian.gustavo@gmail.com
