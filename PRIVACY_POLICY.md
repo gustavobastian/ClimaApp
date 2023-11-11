@@ -11,6 +11,11 @@ The list of permissions required by the app can be found in the `AndroidManifest
 
 https://github.com/gustavobastian/ClimaApp/blob/main/android/app/src/main/AndroidManifest.xml#L32-L34
 
+<br/>
+
+* android.permission.INTERNET : is used for getting information of the weather from the backend.
+
+
 If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protectes your privacy, please send me an email or post a discussion on GitHub, and I will surely try to fix it/help you.
 
 Yours sincerely,
