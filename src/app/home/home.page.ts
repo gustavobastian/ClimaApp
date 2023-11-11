@@ -54,7 +54,6 @@ export class HomePage implements OnInit{
     console.log("clicked");
     this.locationPlace=this.city+","+this.state+","+this.country;
     let response=await this.myService.getAllData(this.locationPlace);
-      //let data=response[1];
     console.log("received:"+JSON.stringify(response));
     console.log("size:"+Object.keys(response).length);
     if(Object.keys(response).length===0){
@@ -64,7 +63,7 @@ export class HomePage implements OnInit{
       this.feels_like=0;
       this.icon="";
       this.presentAlert();
-      return 1;
+      return 0;
     }
 
     let receivedData=JSON.parse(JSON.stringify(response));
