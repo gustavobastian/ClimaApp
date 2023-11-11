@@ -10,3 +10,10 @@ I hereby state, to the best of my knowledge and belief, that I have not programm
 The list of permissions required by the app can be found in the `AndroidManifest.xml` file:
 
 https://github.com/gustavobastian/ClimaApp/blob/main/android/app/src/main/AndroidManifest.xml#L32-L34
+
+If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protectes your privacy, please send me an email or post a discussion on GitHub, and I will surely try to fix it/help you.
+
+Yours sincerely,
+Gustavo Bastian.
+Santo Tomé, Santa Fe, Argentina.
+bastian.gustavo@gmail.com
