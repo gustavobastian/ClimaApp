@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.gabiot.climaapp;
 
 import com.getcapacitor.BridgeActivity;
 
