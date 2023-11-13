@@ -30,6 +30,10 @@
       <div *ngIf="icon !==''">
         <img class="myImage" src="{{icon}}" alt="Day Icon">
       </div>
+      <div *ngIf="icon ===''">
+        <div class="myImage" ></div>
+      </div>
+
       <div class="temperatureLine">
         <div class="temperaturaLabel">Temperatura:</div>
         <div class="temperatureValue">
