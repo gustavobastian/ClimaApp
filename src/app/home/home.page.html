@@ -1,18 +1,7 @@
-<!--<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Clima app
-    </ion-title>
-  </ion-toolbar>
-</ion-header>-->
+<!DOCTYPE html>
 
 <ion-content [fullscreen]="true">
 
-  <ion-header collapse="condense" >
-    <ion-toolbar class="customizedHeader">
-      <ion-title size="large">Clima App</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <div class="container2">
       <div class="cityLine">
@@ -26,7 +15,6 @@
       </div>
       <button id="cityChange" (click)="onEdit()">Cambiar</button>
 
-      <!--<link rel="icon" href="{{icon}}">-->
       <div *ngIf="icon !==''">
         <img class="myImage" src="{{icon}}" alt="Day Icon">
       </div>
