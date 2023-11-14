@@ -2,8 +2,21 @@
 
 ## General description
 
-A simple weather app, that uses the api provided by <a href="www.weatherapi.com" >www.weatherapi.com</a>. The application was designed in Spanish language.\
-In order to run it, you must be registered (go to the page and fill the forms). Save your key in 2 files inside environments folder with the following format:
+A simple weather app, that uses the api provided by <a href="www.weatherapi.com" >www.weatherapi.com</a>. The application was designed in Spanish language.
+
+It has three pages, "home", "city selection" and "Information". In the homepage there are three buttons, one for city selection, other for refresh information and the last one for displaying information of the app and the programmer.
+
+Hope you enjoy it!
+
+## Preparing the app for building
+
+In order to build the app, you must have installed Node (Javascript runtime) with npm (Node Package manager) and ionic-cli (Command Line Interface for Ionic). The node installation can be done using installer from the official page  <a href="https://nodejs.org/en">https://nodejs.org/en</a> . The following instructions are for Ubuntu systems (execute them after Node was being installed):
+
+```\
+npm install -g @ionic/cli
+```
+
+For compiling it, you must be registered (go to the page  <a href="www.weatherapi.com" >www.weatherapi.com</a> and fill the forms). Save your key in 2 files inside environments folder with the following format:
 
 ```\
 export const environment = {
@@ -12,18 +25,9 @@ export const environment = {
   apiWeather:"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 };
-```
+``` 
 
 The files names must be: `environment.prod.ts` and `environment.ts`.
-
-## Preparing the app building
-
-In order to build the app, you must have installed Node (Javascript runtime) with npm (Node Package manager) and ionic-cli (Command Line Interface for Ionic). The node installation can be done using installer from the official page  <a href="https://nodejs.org/en">https://nodejs.org/en</a> . The following instructions are for Ubuntu systems (execute them after Node was being installed):
-
-```\
-npm install -g @ionic/cli
-
-```
 
 ## Serving the app
 
@@ -45,6 +49,8 @@ For Android development, you must have installed Android Studio (download it fro
 user@system:~/$ ionic cap add android
 user@system:~/$ ionic cap build android
 ```
+
+Inside Android Studio, generate apk or blunde and deploy to the device or playStore.
 
 ## Icon and Splash Screen
 
