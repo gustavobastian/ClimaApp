@@ -70,3 +70,4 @@ src/environments/environment.ts
 android/app/build
 android/app/release
 src/environments/environment.prod.ts
+package-lock.json

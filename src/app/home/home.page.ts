@@ -47,6 +47,7 @@ export class HomePage implements OnInit{
     this.state=this.locationService.currentLocation.get_state();
     this.country=this.locationService.currentLocation.get_country();
     this.lastUpgradeTime= new Date().toISOString();
+    this.onClick();
 
   }
 

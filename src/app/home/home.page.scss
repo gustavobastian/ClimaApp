@@ -65,10 +65,9 @@
 #cityChange{
   margin-left:50% ;
   border-radius: 10px;
-
   background: rgb(250, 250, 165);
   transform: translate(-50px,0);
-  height: 35px;
+  height: 50px;
   width: 100px;
   color:black;
   margin-top: 10px;
@@ -140,7 +139,7 @@
   width: 80%;
   margin-top: 10px;
   margin-left: 10%;
-  font-size: 2ex;
+  font-size: 3ex;
 
   color:black;
 }
@@ -186,11 +185,10 @@
   background: rgb(250, 250, 165);
   border-radius: 10px;
   width: 74px;
-  height: 48px;
+  height: 50px;
   margin-left: 50%;
   transform: translate(-37px,0);
   color:black;
-
 }
 #GetData:hover{
   background: rgb(143, 143, 23);
