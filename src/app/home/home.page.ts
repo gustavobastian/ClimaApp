@@ -68,15 +68,22 @@ export class HomePage implements OnInit{
     }
 
     let receivedData=JSON.parse(JSON.stringify(response));
-    console.log("temp received:"+receivedData.temp_c)
-    console.log("feel received:"+receivedData.feelslike_c)
-    this.temperature=receivedData.temp_c;
-    let conditionLocal=JSON.parse(JSON.stringify(receivedData.condition));
-    this.humidity=receivedData.humidity;
-    this.pressure=receivedData.pressure_mb;
-    this.feels_like=receivedData.feelslike_c;
+
+    console.log("temp received:"+receivedData.current.temp_c)
+    console.log("feel received:"+receivedData.current.feelslike_c)
+    this.temperature=receivedData.current.temp_c;
+    let conditionLocal=JSON.parse(JSON.stringify(receivedData.current.condition));
+    this.humidity=receivedData.current.humidity;
+    this.pressure=receivedData.current.pressure_mb;
+    this.feels_like=receivedData.current.feelslike_c;
 
     this.icon=conditionLocal.icon;
+
+
+    this.city=receivedData.location.name;
+    this.state=receivedData.location.region;
+    this.country=receivedData.location.country;
+
     this.lastUpgradeTime= new Date().toISOString();
     return 1;
   }
