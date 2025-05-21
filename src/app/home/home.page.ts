@@ -20,22 +20,20 @@ export class HomePage implements OnInit{
   city:string="";
   state:string="";
   country:string="";
-  icon:string="";
+  iconPage:string="";
 
   lastUpgradeTime:string="10:10:10,1-1-2023"
 
   constructor(
     public myService:GettingInfoService,
-    private router: Router,
+    private readonly router: Router,
     public locationService:CurrentLocationService,
-    private alertController: AlertController
+    private readonly alertController: AlertController
     ) {
 
   }
 
   ngOnInit(): void {
-    ///throw new Error('Method not implemented.');
-    console.log("here");
     this.city=this.locationService.currentLocation.get_city();
     this.state=this.locationService.currentLocation.get_state();
     this.country=this.locationService.currentLocation.get_country();
@@ -52,7 +50,6 @@ export class HomePage implements OnInit{
   }
 
   async onClick():Promise<number>{
-    console.log("clicked");
     this.locationPlace=this.city+","+this.state+","+this.country;
     let response=await this.myService.getAllData(this.locationPlace);
     console.log("received:"+JSON.stringify(response));
@@ -62,7 +59,7 @@ export class HomePage implements OnInit{
       this.humidity=0;
       this.pressure=0;
       this.feels_like=0;
-      this.icon="";
+      this.iconPage = '';
       this.presentAlert();
       return 0;
     }
@@ -77,7 +74,7 @@ export class HomePage implements OnInit{
     this.pressure=receivedData.current.pressure_mb;
     this.feels_like=receivedData.current.feelslike_c;
 
-    this.icon=conditionLocal.icon;
+    this.iconPage = conditionLocal.icon;
 
 
     this.city=receivedData.location.name;

@@ -6,9 +6,6 @@ import { IonicModule } from '@ionic/angular';
 
 import { CityPagePageRoutingModule } from './city-page-routing.module';
 
-
-
-
 import { CityPagePage } from './city-page.page';
 
 @NgModule({
