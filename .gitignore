@@ -71,3 +71,4 @@ android/app/build
 android/app/release
 src/environments/environment.prod.ts
 package-lock.json
+private_key.pepk
