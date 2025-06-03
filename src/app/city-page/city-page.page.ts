@@ -10,19 +10,13 @@ import { FormGroup, FormControl } from "@angular/forms";
   styleUrls: ['./city-page.page.scss'],
 })
 export class CityPagePage implements OnInit {
-
-
-
-
-
-
   public cityForm = new FormGroup({
     cityValue: new FormControl("Santo Tome"),
     stateValue: new FormControl("Santa Fe"),
     countryValue: new FormControl("argentina")
   });
 
-  constructor(private router: Router,public locationService:CurrentLocationService) {
+  constructor(private readonly router: Router,public locationService:CurrentLocationService) {
     console.log("constructing")
   }
 
@@ -31,10 +25,7 @@ export class CityPagePage implements OnInit {
   }
 
   return(){
-    //this.locationService.currentLocation.set_city(this.cityForm.value.cityValue);
-   /* console.log(this.cityForm.value.cityValue);
-    console.log(this.cityForm.value.stateValue);
-    console.log(this.cityForm.value.countryValue);*/
+
     let valueLocal=JSON.parse(JSON.stringify(this.cityForm.value));
 
     this.locationService.currentLocation.set_city(valueLocal.cityValue);

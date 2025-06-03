@@ -12,11 +12,18 @@
       </p>
       <p>Desarrollado por Gustavo Bastian :</p>
       <div class="myLink">
-        <a  style="color:black; font-size:25px;" href="https://www.gabiot.com.ar">www.gabiot.com.ar</a>
-        <a  style="color:black; font-size:25px;" href="mailto:gubastian@gabiot.com.ar"><ion-icon name="mail-outline"></ion-icon></a>
+        <a  class="linkStyle" href="https://www.gabiot.com.ar">
+          www.gabiot.com.ar
+        </a>
+        <a  class="flex flex-col justify-content-left" href="mailto:gubastian@gabiot.com.ar" aria-label="mail">
+          <ion-chip slot="icon-only" class="flex flex-row justify-content-left" >
+          <ion-icon  class="flex flex-row justify-content-left" name="mail-outline" >
+          </ion-icon>
+          </ion-chip>
+        </a>
       </div>
     </div>
 
-    <button id="goHomeButton" (click)="goHome()">Volver</button>
+    <button type="button" id="goHomeButton" (click)="goHome()">Volver</button>
   </div>
 </ion-content>

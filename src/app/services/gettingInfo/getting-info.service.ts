@@ -12,7 +12,7 @@ export class GettingInfoService {
   urlApi =environment.urlApi;
   key=environment.apiWeather;
 
-  constructor(private _http: HttpClient) { }
+  constructor(private readonly _http: HttpClient) { }
 
   async getAllData(location:string): Promise<JSON[]> {
       let location_buff=location.split(',');
@@ -37,12 +37,6 @@ export class GettingInfoService {
       let locationUpper=location.toUpperCase();
       console.log(locationUpper);
       console.log(locationLocal);
-
-
-     /* if(locationLocal!=locationUpper){
-        return JSON.parse(JSON.stringify({}));
-      }*/
-
 
       return dataTemp;
   }}

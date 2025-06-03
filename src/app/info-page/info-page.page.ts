@@ -12,7 +12,7 @@ export class InfoPagePage implements OnInit {
 
   constructor(
     public myService:GettingInfoService,
-    private router: Router,
+    private readonly router: Router,
     public locationService:CurrentLocationService
     ) {
       console.log("building")

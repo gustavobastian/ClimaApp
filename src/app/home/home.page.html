@@ -13,12 +13,12 @@
       <div class="countryLine">
         <div class="country">{{country}}</div>
       </div>
-      <button id="cityChange" (click)="onEdit()">Cambiar</button>
+      <button type="button" id="cityChange" (click)="onEdit()">Cambiar</button>
 
-      <div *ngIf="icon !==''">
-        <img class="myImage" src="{{icon}}" alt="Day Icon">
+      <div *ngIf="iconPage !==''">
+        <img class="myImage" src="{{iconPage}}" alt="Day Icon">
       </div>
-      <div *ngIf="icon ===''">
+      <div *ngIf="iconPage ===''">
         <div class="myImage" ></div>
       </div>
 
@@ -50,9 +50,7 @@
           <div >%</div>
         </div>
       </div>
-      <!--
-      <div class="spaceBetween"></div>-->
-      <button class="myButton" id="GetData" (click)="onClick()">Actualizar</button>
+      <button type="button" class="myButton" id="GetData" (click)="onClick()">Actualizar</button>
       <div class="timeLine">
         <p>Ultima actualizacion:{{lastUpgradeTime}} </p>
       </div>
@@ -62,7 +60,7 @@
     <ion-toolbar class="footer2">
       <div class="myFooter">
         <p>Powered by:<a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>
-        <button class="infoButton" id="infoButton" (click)="goInfo()">Info</button>
+        <button type="button" class="infoButton" id="infoButton" (click)="goInfo()">Info</button>
       </div>
     </ion-toolbar>
   </ion-footer>
