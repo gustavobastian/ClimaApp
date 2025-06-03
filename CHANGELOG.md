@@ -15,5 +15,6 @@ straightforward as possible.
 ### Changed
 
 - updating libraries.
+- fixing security issues
 
 ### Fixed
